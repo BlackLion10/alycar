@@ -1,0 +1,13 @@
+.chisiamo{
+    color:white;
+    padding:10px;
+    border:solid 1px #3e67ad;
+}
+
+.imgChisiamo{
+    scale:0.7;
+    max-width: 400px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}

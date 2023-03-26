@@ -1,0 +1,263 @@
+.menuOver{
+    position:fixed;
+    height:100vh;
+    width:100vw;
+    z-index:3;
+    background-color: black;
+    text-align: center;
+    display:none;
+}
+
+.menuVoce{
+    color:#3e67ad;
+    font-weight: bold;
+    font-size:40px;
+    margin-top: 20vh;
+    text-align: center;
+    text-shadow: 2px 2px 2px #FFFFFF;
+}
+
+.logoMenu{
+    width:150px;
+    margin-top:50px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: transparent;
+    overflow-x: hidden;
+    margin:0px;
+    touch-action: pan-x pan-y;
+}
+
+.hero{
+    height:600px;
+
+}
+
+.CimgHeroLogo{
+    overflow: auto;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    position:absolute;
+    top:50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.imgHeroLogo{
+    grid-column-start: 6;
+    grid-column-end: 9;
+    min-width: 200px;
+}
+
+.CiconsHero{
+    width:100%;
+    overflow: auto;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    position:absolute;
+    top:500px;
+}
+
+#instaHero{
+    font-size: 30px;
+    color:white;
+    grid-column: 5;
+    z-index:2;
+}
+
+#facebookHero{
+    font-size: 30px;
+    color:white;
+    grid-column: 7;
+    z-index:2;
+}
+
+#whatsHero{
+    font-size: 30px;
+    color:white;
+    grid-column: 9;
+    z-index:2;
+}
+
+#envHero{
+    font-size: 30px;
+    color:white;
+    grid-column: 11;
+    z-index:2;
+}
+
+.bottoneHero{
+    padding: 1.5em 3.1em;
+    border: solid black 1px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    color: #ffffff;
+    background-color: #3e67ad;
+    box-shadow: 2px 2px 25px -7px #4c4c4c;
+    cursor: pointer; 
+    z-index: 3;
+}
+
+.CbuttonHero{
+    overflow: auto;
+    display:grid;
+    position:absolute;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*SERVIZI*/
+.Cservizio{
+    overflow: auto;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    margin-top:50px;
+
+}
+
+.servizio{
+    grid-column-start: 2;
+    grid-column-end: 12;
+}
+
+/*AUTO*/
+.Cauto{
+    overflow: auto;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.cardAuto{
+    overflow: auto;
+    grid-column-start:2;
+    grid-column-end: 12;
+    border-radius: 20px;
+}
+
+.imgAuto{
+    border-radius:20px;
+    position: absolute;
+    margin: auto;
+    top: 4vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    height: 200px;
+}
+
+.imgFooterLogo{
+    width:200px;
+    filter: drop-shadow(1px 1px 3px #a6a6a6);
+}
+
+.Cwhatsapp{
+    position:fixed;
+    z-index:3;
+    top:10px;
+    left:10px;
+    background-color: #3e67ad;
+    padding:10px;
+    border-radius: 5px;
+    color:black;
+    border: solid 1px black;
+}
+
+.Cmenu{
+    position:fixed;
+    z-index:3;
+    top:10px;
+    right:10px;
+    background-color: #3e67ad;
+    padding:10px;
+    border-radius: 5px;
+    color:black;
+    border: solid 1px black;
+}
+
+/*Furgoni*/
+.furgoniContainer{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    height: auto;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmFb-X0bIyufgQgEqbgHHTsNjsbQ_MrhnfzA&usqp=CAU");
+    background-repeat:no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.banner{
+    background-color: #3e67ad;
+    height: 200px;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    margin-top:50px;
+    margin-bottom: 50px;
+    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+    text-align: center;
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+    border:solid black 2px;
+
+}
+
+.titoloFurgoni{
+    margin:auto;
+    text-align: center;
+    margin-top: 20px;
+    color:white;
+    font-size: 15px;
+    text-decoration: underline #000000 5px;
+    grid-row: 1;
+}
+
+.descrizioneBanner{
+    text-align: center;
+    color:white;
+    padding:5%;
+    margin:5%;
+    grid-row: 2;
+}
+
+.bottoneFurgoni{
+    padding: 1.5em 3.1em;
+    border: none;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 25px -7px #4c4c4c;
+    cursor: pointer;  
+    grid-row: 3;  
+}
+
+@media (min-width:500px)
+{
+  .banner
+  {
+    height: 300px;
+  }
+  .furgoniContainer{
+    background-size: 600px;
+    background-position-x: right;
+  }
+}
+
+@media (min-width:1200px)
+{
+  .furgoniContainer{
+    background-position-x:650px;
+  }
+}
